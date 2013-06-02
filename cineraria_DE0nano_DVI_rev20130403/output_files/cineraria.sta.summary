@@ -1,0 +1,341 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.673
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 1.087
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 5.013
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 7.275
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
+Slack : 46.608
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 170.801
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.290
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 0.305
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.361
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 9.143
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : -0.412
+TNS   : -4.120
+
+Type  : Slow 1200mV 85C Model Recovery 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : -0.295
+TNS   : -2.593
+
+Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 47.717
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.884
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 1.538
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 1.848
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 1.076
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 3.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 7.435
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 7.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.747
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 12.193
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.538
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 88.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.562
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.919
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 1.228
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 6.275
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 8.178
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 47.003
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 171.484
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.285
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 0.294
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 8.040
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : -0.088
+TNS   : -0.880
+
+Type  : Slow 1200mV 0C Model Recovery 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 0.030
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 48.036
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 1.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 1.641
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 1.076
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 3.437
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 7.436
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 7.439
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.708
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 12.216
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.498
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 88.375
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 1.232
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 1.679
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 1.679
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 9.263
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 10.848
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 48.334
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 173.586
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.134
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 0.143
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.186
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 5.377
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 0.775
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 0.855
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 48.967
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.493
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 0.845
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 1.086
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 1.076
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 3.499
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 7.442
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'dvi_tx_pdiff:inst5|pdiff_transmitter:SER|pll_tx_cyclone3_xga:\XGAPLL:TXPLL|altpll:altpll_component|pll_tx_cyclone3_xga_altpll:auto_generated|wire_pll1_clk[0]'
+Slack : 7.474
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 9.416
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'syspll:inst_syspll|altpll:altpll_component|syspll_altpll:auto_generated|wire_pll1_clk[2]'
+Slack : 12.249
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.310
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'avpll_xga:inst_avpll|altpll:altpll_component|avpll_xga_altpll:auto_generated|wire_pll1_clk[1]'
+Slack : 88.447
+TNS   : 0.000
+
+------------------------------------------------------------

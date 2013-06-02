@@ -1,0 +1,176 @@
+
+boot_loader.elf:     file format elf32-littlenios2
+
+
+Disassembly of section .text:
+
+0f000000 <_start>:
+ f000000:	0001703a 	wrctl	status,zero
+ f000004:	0009883a 	mov	r4,zero
+ f000008:	0001883a 	nop
+ f00000c:	0001883a 	nop
+
+0f000010 <_system_entry>:
+ f000010:	00800074 	movhi	r2,1
+
+0f000014 <cache_loop>:
+ f000014:	1001483a 	initi	r2
+ f000018:	10bff804 	addi	r2,r2,-32
+ f00001c:	103ffd1e 	bne	r2,zero,f000014 <cache_loop>
+ f000020:	0000203a 	flushp
+
+0f000024 <led_init_set_1>:
+ f000024:	00a0e8f4 	movhi	r2,33699
+ f000028:	10a8e1d4 	ori	r2,r2,41863
+ f00002c:	00c40034 	movhi	r3,4096
+ f000030:	18c08814 	ori	r3,r3,544
+ f000034:	18800035 	stwio	r2,0(r3)
+ f000038:	2000011e 	bne	r4,zero,f000040 <envclear_skip>
+ f00003c:	010001b4 	movhi	r4,6
+
+0f000040 <envclear_skip>:
+ f000040:	0683c034 	movhi	gp,3840
+ f000044:	201f883a 	mov	r15,r4
+ f000048:	04bfffc4 	movi	r18,-1
+ f00004c:	f0001480 	call	f000148 <sub_epcs_dev_open>
+ f000050:	f0001c80 	call	f0001c8 <sub_epcs_close_ready_loop>
+ f000054:	0090d3f4 	movhi	r2,17231
+ f000058:	10949414 	ori	r2,r2,21072
+ f00005c:	a880341e 	bne	r21,r2,f000130 <led_error_halt_12>
+
+0f000060 <program_copy>:
+ f000060:	7bc00204 	addi	r15,r15,8
+ f000064:	f0001480 	call	f000148 <sub_epcs_dev_open>
+ f000068:	ac803026 	beq	r21,r18,f00012c <program_no_entry>
+ f00006c:	a821883a 	mov	r16,r21
+ f000070:	f0001740 	call	f000174 <sub_epcs_read_int>
+ f000074:	80002b26 	beq	r16,zero,f000124 <program_entry>
+ f000078:	a823883a 	mov	r17,r21
+ f00007c:	0027883a 	mov	r19,zero
+ f000080:	00a00034 	movhi	r2,32768
+ f000084:	809c703a 	and	r14,r16,r2
+ f000088:	1004303a 	nor	r2,r2,zero
+ f00008c:	80a0703a 	and	r16,r16,r2
+ f000090:	7c1f883a 	add	r15,r15,r16
+ f000094:	8461883a 	add	r16,r16,r17
+ f000098:	70000c26 	beq	r14,zero,f0000cc <lzss_data_byte>
+ f00009c:	f0001740 	call	f000174 <sub_epcs_read_int>
+ f0000a0:	ac61883a 	add	r16,r21,r17
+ f0000a4:	000b883a 	mov	r5,zero
+
+0f0000a8 <lzss_decompress_loop>:
+ f0000a8:	28000326 	beq	r5,zero,f0000b8 <lzss_ctrl_byte_read>
+ f0000ac:	300c907a 	slli	r6,r6,1
+ f0000b0:	297fffc4 	addi	r5,r5,-1
+ f0000b4:	00000306 	br	f0000c4 <lzss_riteral_check>
+
+0f0000b8 <lzss_ctrl_byte_read>:
+ f0000b8:	f0001a00 	call	f0001a0 <sub_epcs_tx_ready_loop>
+ f0000bc:	a00d883a 	mov	r6,r20
+ f0000c0:	014001c4 	movi	r5,7
+
+0f0000c4 <lzss_riteral_check>:
+ f0000c4:	3080200c 	andi	r2,r6,128
+ f0000c8:	1000031e 	bne	r2,zero,f0000d8 <lzss_ref_word>
+
+0f0000cc <lzss_data_byte>:
+ f0000cc:	f0001a00 	call	f0001a0 <sub_epcs_tx_ready_loop>
+ f0000d0:	0009883a 	mov	r4,zero
+ f0000d4:	00000b06 	br	f000104 <lzss_bytedata_store>
+
+0f0000d8 <lzss_ref_word>:
+ f0000d8:	f0001a00 	call	f0001a0 <sub_epcs_tx_ready_loop>
+ f0000dc:	a008923a 	slli	r4,r20,8
+ f0000e0:	f0001a00 	call	f0001a0 <sub_epcs_tx_ready_loop>
+ f0000e4:	a128b03a 	or	r20,r20,r4
+ f0000e8:	a0000c26 	beq	r20,zero,f00011c <section_data_copy_exit>
+ f0000ec:	a006d13a 	srli	r3,r20,4
+ f0000f0:	a10003cc 	andi	r4,r20,15
+ f0000f4:	21000084 	addi	r4,r4,2
+
+0f0000f8 <lzss_ref_copy_loop>:
+ f0000f8:	88c5c83a 	sub	r2,r17,r3
+ f0000fc:	15000023 	ldbuio	r20,0(r2)
+ f000100:	213fffc4 	addi	r4,r4,-1
+
+0f000104 <lzss_bytedata_store>:
+ f000104:	8d000025 	stbio	r20,0(r17)
+ f000108:	8c400044 	addi	r17,r17,1
+ f00010c:	8c000326 	beq	r17,r16,f00011c <section_data_copy_exit>
+ f000110:	203ff91e 	bne	r4,zero,f0000f8 <lzss_ref_copy_loop>
+ f000114:	703fed26 	beq	r14,zero,f0000cc <lzss_data_byte>
+ f000118:	003fe306 	br	f0000a8 <lzss_decompress_loop>
+
+0f00011c <section_data_copy_exit>:
+ f00011c:	f0001c80 	call	f0001c8 <sub_epcs_close_ready_loop>
+ f000120:	003fcf06 	br	f000060 <program_copy>
+
+0f000124 <program_entry>:
+ f000124:	f0001c80 	call	f0001c8 <sub_epcs_close_ready_loop>
+ f000128:	a83ee83a 	callr	r21
+
+0f00012c <program_no_entry>:
+ f00012c:	f0001c80 	call	f0001c8 <sub_epcs_close_ready_loop>
+
+0f000130 <led_error_halt_12>:
+ f000130:	00a1abf4 	movhi	r2,34479
+ f000134:	108bf014 	ori	r2,r2,12224
+ f000138:	00c40034 	movhi	r3,4096
+ f00013c:	18c08814 	ori	r3,r3,544
+ f000140:	18800035 	stwio	r2,0(r3)
+
+0f000144 <cpu_halt_loop_15>:
+ f000144:	003fff06 	br	f000144 <cpu_halt_loop_15>
+
+0f000148 <sub_epcs_dev_open>:
+ f000148:	f839883a 	mov	fp,ra
+ f00014c:	00810004 	movi	r2,1024
+ f000150:	d0810335 	stwio	r2,1036(gp)
+ f000154:	7826923a 	slli	r19,r15,8
+ f000158:	9cc000d4 	ori	r19,r19,3
+ f00015c:	00c00104 	movi	r3,4
+
+0f000160 <sub_epcs_set_address_loop>:
+ f000160:	f0001a00 	call	f0001a0 <sub_epcs_tx_ready_loop>
+ f000164:	9826123a 	roli	r19,r19,8
+ f000168:	18ffffc4 	addi	r3,r3,-1
+ f00016c:	183ffc1e 	bne	r3,zero,f000160 <sub_epcs_set_address_loop>
+ f000170:	00000106 	br	f000178 <sub_epcs_read_int_entry>
+
+0f000174 <sub_epcs_read_int>:
+ f000174:	f839883a 	mov	fp,ra
+
+0f000178 <sub_epcs_read_int_entry>:
+ f000178:	002b883a 	mov	r21,zero
+ f00017c:	0027883a 	mov	r19,zero
+ f000180:	00c00104 	movi	r3,4
+
+0f000184 <sub_epcs_read_int_loop>:
+ f000184:	f0001a00 	call	f0001a0 <sub_epcs_tx_ready_loop>
+ f000188:	ad2ab03a 	or	r21,r21,r20
+ f00018c:	a82a163a 	roli	r21,r21,24
+ f000190:	18ffffc4 	addi	r3,r3,-1
+ f000194:	183ffb1e 	bne	r3,zero,f000184 <sub_epcs_read_int_loop>
+ f000198:	e03f883a 	mov	ra,fp
+ f00019c:	f800283a 	ret
+
+0f0001a0 <sub_epcs_tx_ready_loop>:
+ f0001a0:	d0810237 	ldwio	r2,1032(gp)
+ f0001a4:	1080100c 	andi	r2,r2,64
+ f0001a8:	103ffd26 	beq	r2,zero,f0001a0 <sub_epcs_tx_ready_loop>
+ f0001ac:	98803fcc 	andi	r2,r19,255
+ f0001b0:	d0810135 	stwio	r2,1028(gp)
+
+0f0001b4 <sub_epcs_rx_ready_loop>:
+ f0001b4:	d0810237 	ldwio	r2,1032(gp)
+ f0001b8:	1080200c 	andi	r2,r2,128
+ f0001bc:	103ffd26 	beq	r2,zero,f0001b4 <sub_epcs_rx_ready_loop>
+ f0001c0:	d5010023 	ldbuio	r20,1024(gp)
+ f0001c4:	f800283a 	ret
+
+0f0001c8 <sub_epcs_close_ready_loop>:
+ f0001c8:	d0810237 	ldwio	r2,1032(gp)
+ f0001cc:	1080080c 	andi	r2,r2,32
+ f0001d0:	103ffd26 	beq	r2,zero,f0001c8 <sub_epcs_close_ready_loop>
+ f0001d4:	d0010335 	stwio	zero,1036(gp)
+ f0001d8:	f800283a 	ret
